@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 
 class button extends StatelessWidget {
   final String text;
-  button({
-    @required this.text
-  });
+  button({@required this.text});
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
-      child: Text(text),
-      onPressed: () {},
+    return Expanded(
+      flex: 1,
+      child: RaisedButton(
+        child: Text(text),
+        onPressed: () {},
+      ),
     );
   }
 }

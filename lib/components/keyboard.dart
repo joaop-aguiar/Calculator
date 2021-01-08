@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'button_row.dart';
+import 'button.dart';
 
 class keyboard extends StatelessWidget {
   @override
@@ -7,18 +9,16 @@ class keyboard extends StatelessWidget {
       height: 500,
       child: Column(
         children: <Widget>[
-          RaisedButton(
-            child: Text('9'),
-            onPressed: () {},
-          ), 
-          RaisedButton(
-            child: Text('9'),
-            onPressed: () {},
-          ),
-           RaisedButton(
-            child: Text('9'),
-            onPressed: () {},
-          )
+          buttonrow([
+            button(text: '7'),
+            button(text: '8'),
+            button(text: '9'),
+            ]),
+          buttonrow([
+            button(text: '4'),
+            button(text: '5'),
+            button(text: '6'),
+            ])
         ],
         
         ),
