@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
-class display extends StatelessWidget {
+class Display extends StatelessWidget {
   final String text;
-  display(this.text);
+  Display(this.text);
 
   @override
   Widget build(BuildContext context) {
@@ -28,10 +28,8 @@ class display extends StatelessWidget {
                   fontWeight: FontWeight.w100,
                   decoration: TextDecoration.none,
                   fontSize: 80,
-                  color: Colors.white,
-                ),        
-              
-              
+                  color: Colors.white70,
+                ),
               ),
             ),
           ],
